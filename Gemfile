@@ -5,7 +5,6 @@ source "https://rubygems.org"
 gemspec
 
 group :development do
-  gem "chandler", "0.9.0"
   gem "minitest", "~> 5.11"
   gem "pry", "0.14.1"
   gem "rake", "~> 13.0"
