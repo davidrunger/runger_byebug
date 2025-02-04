@@ -1,6 +1,4 @@
-# Changelog
-
-## [Unreleased]
+## Unreleased
 
 - Release via RubyGems as `runger_byebug`.
 - Delete `.bundle/config`.
