@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'bundler/gem_tasks'
+
 import "tasks/compile.rake"
 import "tasks/test.rake"
 import "tasks/coverage.rake"
