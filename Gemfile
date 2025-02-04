@@ -10,6 +10,7 @@ group :development do
   gem "pry", "0.14.1"
   gem "rake", "~> 13.0"
   gem "rake-compiler", "~> 1.0"
+  gem "runger_release_assistant", require: false
   gem "simplecov", "0.21.2"
   gem "yard", "0.9.26"
 end
