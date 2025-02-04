@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Release via RubyGems as `runger_byebug`.
+
 ### Changed
 
 * [#690](https://github.com/deivid-rodriguez/byebug/pull/690): `break` without any arguments now sets a breakpoint on the current line, just like `gdb`.

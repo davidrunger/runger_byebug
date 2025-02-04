@@ -3,12 +3,12 @@
 require_relative "lib/byebug/version"
 
 Gem::Specification.new do |s|
-  s.name = "byebug"
+  s.name = "runger_byebug"
   s.version = Byebug::VERSION
-  s.authors = ["David Rodriguez", "Kent Sibilev", "Mark Moseley"]
-  s.email = "deivid.rodriguez@riseup.net"
+  s.authors = ["David Runger"] # forked from ["David Rodriguez", "Kent Sibilev", "Mark Moseley"]
+  s.email = "davidjrunger@gmail.com"
   s.license = "BSD-2-Clause"
-  s.homepage = "https://github.com/deivid-rodriguez/byebug"
+  s.homepage = "https://github.com/davidrunger/byebug"
   s.summary = "Ruby fast debugger - base + CLI"
   s.description = "Byebug is a Ruby debugger. It's implemented using the
     TracePoint C API for execution control and the Debug Inspector C API for
