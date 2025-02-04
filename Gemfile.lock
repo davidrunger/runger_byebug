@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    runger_byebug (11.1.4.alpha)
+    runger_byebug (11.2.0)
 
 GEM
   remote: https://rubygems.org/
