@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Update gem dependencies.
 
 ## v11.2.0 (2025-02-04)
 
