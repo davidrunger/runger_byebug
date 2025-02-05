@@ -1,6 +1,7 @@
 ## Unreleased
 - Update gem dependencies.
 - Bump bundler from 2.3.26 to 2.6.3.
+- Add `irb` and `reline` dependencies to gemspec.
 
 ## v11.2.0 (2025-02-04)
 
