@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    runger_byebug (11.2.1.alpha)
+    runger_byebug (11.3.0)
       irb
       reline
 
