@@ -1,4 +1,4 @@
-## Unreleased
+## v11.4.0 (2025-02-05)
 - Add metadata to gemspec.
 
 ## v11.3.0 (2025-02-05)
