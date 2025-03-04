@@ -44,7 +44,7 @@ GEM
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
-    pry (0.14.1)
+    pry (0.15.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
     psych (5.2.3)
@@ -64,7 +64,7 @@ GEM
       rainbow (>= 3.0)
       slop (~> 4.8)
     securerandom (0.4.1)
-    simplecov (0.21.2)
+    simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
       simplecov_json_formatter (~> 0.1)
@@ -75,7 +75,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uri (1.0.3)
-    yard (0.9.26)
+    yard (0.9.37)
 
 PLATFORMS
   ruby
