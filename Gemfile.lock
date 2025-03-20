@@ -8,7 +8,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (8.0.1)
+    activesupport (8.0.2)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -40,7 +40,7 @@ GEM
     logger (1.6.6)
     memo_wise (1.11.0)
     method_source (1.1.0)
-    minitest (5.25.4)
+    minitest (5.25.5)
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
@@ -58,10 +58,11 @@ GEM
       psych (>= 4.0.0)
     reline (0.6.0)
       io-console (~> 0.5)
-    runger_release_assistant (2.0.0)
+    runger_release_assistant (4.2.1)
       activesupport (>= 6)
       memo_wise (>= 1.7)
       rainbow (>= 3.0)
+      rake (>= 13.2.1)
       slop (~> 4.8)
     securerandom (0.4.1)
     simplecov (0.22.0)
