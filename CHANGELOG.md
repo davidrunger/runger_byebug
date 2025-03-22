@@ -1,5 +1,5 @@
 ## Unreleased
-[no unreleased changes yet]
+- Remove `bundler` as an explicit development dependency.
 
 ## v11.4.0 (2025-02-05)
 - Add metadata to gemspec.
