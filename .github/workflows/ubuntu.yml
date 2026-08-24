@@ -13,7 +13,7 @@ jobs:
   test:
     container: deividrodriguez/byebug:${{ matrix.version }}-${{ matrix.line_editor }}-${{ matrix.compiler }}
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
 
     strategy:
       fail-fast: false
@@ -24,7 +24,7 @@ jobs:
         compiler: [clang, gcc]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Run CI checks
         run: |
@@ -35,7 +35,7 @@ jobs:
         run: mv coverage/.resultset.json coverage/${{ matrix.version }}-${{ matrix.line_editor }}-${{ matrix.compiler }}.json
         if: startsWith(matrix.version, '2.5')
 
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: coverage-${{ matrix.version }}-${{ matrix.line_editor }}-${{ matrix.compiler }}
           path: coverage/${{ matrix.version }}-${{ matrix.line_editor }}-${{ matrix.compiler }}.json
@@ -46,31 +46,31 @@ jobs:
   coverage:
     container: deividrodriguez/byebug:2.7.2-readline-gcc
 
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
 
     needs: test
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
-          name: coverage-2.5.8-libedit-clang
+          name: coverage-2.5.9-libedit-clang
           path: coverage
 
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
-          name: coverage-2.5.8-libedit-gcc
+          name: coverage-2.5.9-libedit-gcc
           path: coverage
 
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
-          name: coverage-2.5.8-readline-clang
+          name: coverage-2.5.9-readline-clang
           path: coverage
 
-      - uses: actions/download-artifact@v1
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
-          name: coverage-2.5.8-readline-gcc
+          name: coverage-2.5.9-readline-gcc
           path: coverage
 
       - name: Aggregate coverage results
