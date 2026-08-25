@@ -2,8 +2,9 @@
 
 name: ubuntu
 
-# NOTE: This GitHub Action is disabled for now, because it fails.
-# on:
+# NOTE: Because it fails, this GitHub Action currently only runs if/when manually triggered.
+on:
+  workflow_dispatch:
 #   pull_request:
 #   push:
 #     branches:
